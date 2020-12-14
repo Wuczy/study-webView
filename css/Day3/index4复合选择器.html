@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        /* 
+        1.交集选择器：选中同时复合多个条件的元素。
+            语法：选择器1选择器2..选择器n{}
+            注意：交集选择器中如果有元素选择器，必须使用元素选择器开头
+        */
+        div.blue{
+            color: blue;
+        }
+        .a.b.c{
+            color: orangered;
+        }
+        /* 
+        2.并集选择器：同时选择多个选择器对应的元素。
+            语法：选择器1,选择器2，..选择器n{}
+        */
+        h1,span{
+            color: green;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="blue">我是div</div>
+    <p class="a b c">ppppp</p>
+
+    <h1>标题</h1>
+    <span>内容</span>
+</body>
+</html>
